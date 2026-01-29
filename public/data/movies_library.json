@@ -1,0 +1,992 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Avatar",
+      "year": "2009",
+      "director": "James Cameron",
+      "actors": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver"
+      ],
+      "rating": 7.601,
+      "runtime": "162 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Science Fiction"
+      ],
+      "plot": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "director": "Anthony Russo",
+      "actors": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ],
+      "rating": 8.237,
+      "runtime": "181 min",
+      "genre": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
+      "plot": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Titanic",
+      "year": "1997",
+      "director": "James Cameron",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Kate Winslet",
+        "Billy Zane"
+      ],
+      "rating": 7.9,
+      "runtime": "194 min",
+      "genre": [
+        "Drama",
+        "Romance"
+      ],
+      "plot": "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Star Wars: The Force Awakens",
+      "year": "2015",
+      "director": "J.J. Abrams",
+      "actors": [
+        "Harrison Ford",
+        "Mark Hamill",
+        "Carrie Fisher"
+      ],
+      "rating": 7.253,
+      "runtime": "136 min",
+      "genre": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "plot": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Spider-Man: No Way Home",
+      "year": "2021",
+      "director": "Jon Watts",
+      "actors": [
+        "Tom Holland",
+        "Zendaya",
+        "Benedict Cumberbatch"
+      ],
+      "rating": 7.934,
+      "runtime": "148 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "plot": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Jurassic World",
+      "year": "2015",
+      "director": "Colin Trevorrow",
+      "actors": [
+        "Chris Pratt",
+        "Bryce Dallas Howard",
+        "Irrfan Khan"
+      ],
+      "rating": 6.7,
+      "runtime": "124 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "plot": "Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Lion King",
+      "year": "1994",
+      "director": "Roger Allers",
+      "actors": [
+        "Matthew Broderick",
+        "Moira Kelly",
+        "Nathan Lane"
+      ],
+      "rating": 8.255,
+      "runtime": "89 min",
+      "genre": [
+        "Family",
+        "Animation",
+        "Drama",
+        "Adventure"
+      ],
+      "plot": "Young lion prince Simba, eager to one day become king of the Pride Lands, grows up under the watchful eye of his father Mufasa; all the while his villainous uncle Scar conspires to take the throne for himself. Amid betrayal and tragedy, Simba must confront his past and find his rightful place in the Circle of Life.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Frozen",
+      "year": "2013",
+      "director": "Chris Buck",
+      "actors": [
+        "Idina Menzel",
+        "Kristen Bell",
+        "Jonathan Groff"
+      ],
+      "rating": 7.2,
+      "runtime": "102 min",
+      "genre": [
+        "Animation",
+        "Family",
+        "Adventure",
+        "Fantasy"
+      ],
+      "plot": "Young princess Anna of Arendelle dreams about finding true love at her sister Elsa’s coronation. Fate takes her on a dangerous journey in an attempt to end the eternal winter that has fallen over the kingdom. She's accompanied by ice delivery man Kristoff, his reindeer Sven, and snowman Olaf. On an adventure where she will find out what friendship, courage, family, and true love really means.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Frozen II",
+      "year": "2019",
+      "director": "Jennifer Lee",
+      "actors": [
+        "Idina Menzel",
+        "Kristen Bell",
+        "Josh Gad"
+      ],
+      "rating": 7.2,
+      "runtime": "103 min",
+      "genre": [
+        "Family",
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "plot": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/mINJaa34MtknCYl5AjtNJzWj8cD.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Inception",
+      "year": "2010",
+      "director": "Christopher Nolan",
+      "actors": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ken Watanabe"
+      ],
+      "rating": 8.37,
+      "runtime": "148 min",
+      "genre": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "plot": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
+    },
+    {
+      "id": 11,
+      "title": "The Dark Knight",
+      "year": "2008",
+      "director": "Christopher Nolan",
+      "actors": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart"
+      ],
+      "rating": 8.526,
+      "runtime": "152 min",
+      "genre": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "plot": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Forrest Gump",
+      "year": "1994",
+      "director": "Robert Zemeckis",
+      "actors": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise"
+      ],
+      "rating": 8.462,
+      "runtime": "142 min",
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "plot": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "director": "Quentin Tarantino",
+      "actors": [
+        "John Travolta",
+        "Samuel L. Jackson",
+        "Uma Thurman"
+      ],
+      "rating": 8.486,
+      "runtime": "154 min",
+      "genre": [
+        "Thriller",
+        "Crime",
+        "Comedy"
+      ],
+      "plot": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
+    },
+    {
+      "id": 14,
+      "title": "The Godfather",
+      "year": "1972",
+      "director": "Francis Ford Coppola",
+      "actors": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan"
+      ],
+      "rating": 8.7,
+      "runtime": "175 min",
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "plot": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    },
+    {
+      "id": 15,
+      "title": "The Godfather Part II",
+      "year": "1974",
+      "director": "Francis Ford Coppola",
+      "actors": [
+        "Al Pacino",
+        "Robert Duvall",
+        "Diane Keaton"
+      ],
+      "rating": 8.6,
+      "runtime": "202 min",
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "plot": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg"
+    },
+    {
+      "id": 16,
+      "title": "The Matrix",
+      "year": "1999",
+      "director": "Lana Wachowski",
+      "actors": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss"
+      ],
+      "rating": 8.237,
+      "runtime": "136 min",
+      "genre": [
+        "Action",
+        "Science Fiction"
+      ],
+      "plot": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/p96dm7sCMn4VYAStA6siNz30G1r.jpg"
+    },
+    {
+      "id": 17,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": "2003",
+      "director": "Peter Jackson",
+      "actors": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen"
+      ],
+      "rating": 8.492,
+      "runtime": "201 min",
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "plot": "As armies mass for a final battle that will decide the fate of the world--and powerful, ancient forces of Light and Dark compete to determine the outcome--one member of the Fellowship of the Ring is revealed as the noble heir to the throne of the Kings of Men. Yet, the sole hope for triumph over evil lies with a brave hobbit, Frodo, who, accompanied by his loyal friend Sam and the hideous, wretched Gollum, ventures deep into the very dark heart of Mordor on his seemingly impossible quest to destroy the Ring of Power.​",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "year": "2001",
+      "director": "Chris Columbus",
+      "actors": [
+        "Daniel Radcliffe",
+        "Rupert Grint",
+        "Emma Watson"
+      ],
+      "rating": 7.9,
+      "runtime": "152 min",
+      "genre": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "plot": "Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard—with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths—and about the villain who's to blame.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Jurassic Park",
+      "year": "1993",
+      "director": "Steven Spielberg",
+      "actors": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum"
+      ],
+      "rating": 7.965,
+      "runtime": "127 min",
+      "genre": [
+        "Adventure",
+        "Science Fiction"
+      ],
+      "plot": "A wealthy entrepreneur secretly creates a theme park featuring living dinosaurs drawn from prehistoric DNA. Before opening day, he invites a team of experts and his two eager grandchildren to experience the park and help calm anxious investors. However, the park is anything but amusing as the security systems go off-line and the dinosaurs escape.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/maFjKnJ62hDQ9E66dKqDZgbUy0H.jpg"
+    },
+    {
+      "id": 20,
+      "title": "The Avengers",
+      "year": "2012",
+      "director": "Joss Whedon",
+      "actors": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo"
+      ],
+      "rating": 7.921,
+      "runtime": "143 min",
+      "genre": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "plot": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Black Panther",
+      "year": "2018",
+      "director": "Ryan Coogler",
+      "actors": [
+        "Chadwick Boseman",
+        "Michael B. Jordan",
+        "Lupita Nyong'o"
+      ],
+      "rating": 7.364,
+      "runtime": "135 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "plot": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Iron Man 3",
+      "year": "2013",
+      "director": "Shane Black",
+      "actors": [
+        "Robert Downey Jr.",
+        "Gwyneth Paltrow",
+        "Don Cheadle"
+      ],
+      "rating": 6.931,
+      "runtime": "130 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "plot": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Mission: Impossible - Fallout",
+      "year": "2018",
+      "director": "Christopher McQuarrie",
+      "actors": [
+        "Tom Cruise",
+        "Henry Cavill",
+        "Ving Rhames"
+      ],
+      "rating": 7.446,
+      "runtime": "147 min",
+      "genre": [
+        "Action",
+        "Adventure"
+      ],
+      "plot": "When an IMF mission ends badly, the world is faced with dire consequences. As Ethan Hunt takes it upon himself to fulfill his original briefing, the CIA begin to question his loyalty and his motives. The IMF team find themselves in a race against time, hunted by assassins while trying to prevent a global catastrophe.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Despicable Me 4",
+      "year": "2024",
+      "director": "Chris Renaud",
+      "actors": [
+        "Steve Carell",
+        "Kristen Wiig",
+        "Will Ferrell"
+      ],
+      "rating": 6.996,
+      "runtime": "94 min",
+      "genre": [
+        "Family",
+        "Comedy",
+        "Animation",
+        "Science Fiction"
+      ],
+      "plot": "Gru and Lucy and their girls—Margo, Edith and Agnes—welcome a new member to the Gru family, Gru Jr., who is intent on tormenting his dad. Gru also faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend Valentina, forcing the family to go on the run.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/wWba3TaojhK7NdycRhoQpsG0FaH.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Deadpool & Wolverine",
+      "year": "2024",
+      "director": "Shawn Levy",
+      "actors": [
+        "Ryan Reynolds",
+        "Hugh Jackman",
+        "Emma Corrin"
+      ],
+      "rating": 7.56,
+      "runtime": "128 min",
+      "genre": [
+        "Action",
+        "Comedy",
+        "Science Fiction"
+      ],
+      "plot": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Inside Out 2",
+      "year": "2024",
+      "director": "Kelsey Mann",
+      "actors": [
+        "Amy Poehler",
+        "Maya Hawke",
+        "Kensington Tallman"
+      ],
+      "rating": 7.546,
+      "runtime": "97 min",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Comedy",
+        "Family"
+      ],
+      "plot": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"
+    },
+    {
+      "id": 27,
+      "title": "Oppenheimer",
+      "year": "2023",
+      "director": "Christopher Nolan",
+      "actors": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon"
+      ],
+      "rating": 8.036,
+      "runtime": "181 min",
+      "genre": [
+        "Drama",
+        "History"
+      ],
+      "plot": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Barbie",
+      "year": "2023",
+      "director": "Greta Gerwig",
+      "actors": [
+        "Margot Robbie",
+        "Ryan Gosling",
+        "America Ferrera"
+      ],
+      "rating": 6.932,
+      "runtime": "114 min",
+      "genre": [
+        "Comedy",
+        "Adventure"
+      ],
+      "plot": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Moana 2",
+      "year": "2024",
+      "director": "David G. Derrick Jr.",
+      "actors": [
+        "Auliʻi Cravalho",
+        "Dwayne Johnson",
+        "Hualālai Chung"
+      ],
+      "rating": 7.0,
+      "runtime": "100 min",
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Family",
+        "Comedy",
+        "Fantasy"
+      ],
+      "plot": "After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Top Gun: Maverick",
+      "year": "2022",
+      "director": "Joseph Kosinski",
+      "actors": [
+        "Tom Cruise",
+        "Val Kilmer",
+        "Miles Teller"
+      ],
+      "rating": 8.158,
+      "runtime": "131 min",
+      "genre": [
+        "Action",
+        "Drama"
+      ],
+      "plot": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
+    },
+    {
+      "id": 31,
+      "title": "E.T. the Extra-Terrestrial",
+      "year": "1982",
+      "director": "Steven Spielberg",
+      "actors": [
+        "Henry Thomas",
+        "Drew Barrymore",
+        "Robert MacNaughton"
+      ],
+      "rating": 7.511,
+      "runtime": "115 min",
+      "genre": [
+        "Science Fiction",
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "plot": "An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg"
+    },
+    {
+      "id": 32,
+      "title": "The Wizard of Oz",
+      "year": "1939",
+      "director": "Victor Fleming",
+      "actors": [
+        "Judy Garland",
+        "Ray Bolger",
+        "Jack Haley"
+      ],
+      "rating": 7.59,
+      "runtime": "102 min",
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Family"
+      ],
+      "plot": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Kong: Skull Island",
+      "year": "2017",
+      "director": "Jordan Vogt-Roberts",
+      "actors": [
+        "Tom Hiddleston",
+        "Samuel L. Jackson",
+        "John Goodman"
+      ],
+      "rating": 6.551,
+      "runtime": "118 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "plot": "Explore the mysterious and dangerous home of the king of the apes as a team of explorers ventures deep inside the treacherous, primordial island.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Shrek 2",
+      "year": "2004",
+      "director": "Conrad Vernon",
+      "actors": [
+        "Mike Myers",
+        "Eddie Murphy",
+        "Cameron Diaz"
+      ],
+      "rating": 7.305,
+      "runtime": "92 min",
+      "genre": [
+        "Animation",
+        "Family",
+        "Comedy",
+        "Fantasy",
+        "Adventure",
+        "Romance"
+      ],
+      "plot": "Shrek, Fiona, and Donkey set off to Far, Far Away to meet Fiona's mother and father, the Queen and King. But not everyone is happily ever after, as Shrek and the King find it difficult to get along. But when the Fairy Godmother discovers that Fiona has married Shrek instead of her son Prince Charming as King Harold had promised, she plots to destroy their marriage and replace the ogre with her son Charming.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/2yYP0PQjG8zVqturh1BAqu2Tixl.jpg"
+    },
+    {
+      "id": 35,
+      "title": "Minions",
+      "year": "2015",
+      "director": "Kyle Balda",
+      "actors": [
+        "Sandra Bullock",
+        "Jon Hamm",
+        "Michael Keaton"
+      ],
+      "rating": 6.4,
+      "runtime": "91 min",
+      "genre": [
+        "Family",
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "plot": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/dr02BdCNAUPVU07aOodwPYv6HCf.jpg"
+    },
+    {
+      "id": 36,
+      "title": "Star Wars",
+      "year": "1977",
+      "director": "George Lucas",
+      "actors": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher"
+      ],
+      "rating": 8.202,
+      "runtime": "121 min",
+      "genre": [
+        "Adventure",
+        "Action",
+        "Science Fiction"
+      ],
+      "plot": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+    },
+    {
+      "id": 37,
+      "title": "The Super Mario Bros. Movie",
+      "year": "2023",
+      "director": "Michael Jelenic",
+      "actors": [
+        "Chris Pratt",
+        "Anya Taylor-Joy",
+        "Charlie Day"
+      ],
+      "rating": 7.597,
+      "runtime": "93 min",
+      "genre": [
+        "Family",
+        "Comedy",
+        "Adventure",
+        "Animation",
+        "Fantasy"
+      ],
+      "plot": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+    },
+    {
+      "id": 38,
+      "title": "Frozen",
+      "year": "2013",
+      "director": "Chris Buck",
+      "actors": [
+        "Idina Menzel",
+        "Kristen Bell",
+        "Jonathan Groff"
+      ],
+      "rating": 7.2,
+      "runtime": "102 min",
+      "genre": [
+        "Animation",
+        "Family",
+        "Adventure",
+        "Fantasy"
+      ],
+      "plot": "Young princess Anna of Arendelle dreams about finding true love at her sister Elsa’s coronation. Fate takes her on a dangerous journey in an attempt to end the eternal winter that has fallen over the kingdom. She's accompanied by ice delivery man Kristoff, his reindeer Sven, and snowman Olaf. On an adventure where she will find out what friendship, courage, family, and true love really means.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Black Panther: Wakanda Forever",
+      "year": "2022",
+      "director": "Ryan Coogler",
+      "actors": [
+        "Letitia Wright",
+        "Tenoch Huerta Mejía",
+        "Lupita Nyong'o"
+      ],
+      "rating": 7.016,
+      "runtime": "162 min",
+      "genre": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "plot": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg"
+    },
+    {
+      "id": 40,
+      "title": "Toy Story",
+      "year": "1995",
+      "director": "John Lasseter",
+      "actors": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Don Rickles"
+      ],
+      "rating": 7.97,
+      "runtime": "81 min",
+      "genre": [
+        "Family",
+        "Comedy",
+        "Animation",
+        "Adventure"
+      ],
+      "plot": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Toy Story 3",
+      "year": "2010",
+      "director": "Lee Unkrich",
+      "actors": [
+        "Tom Hanks",
+        "Tim Allen",
+        "Joan Cusack"
+      ],
+      "rating": 7.8,
+      "runtime": "102 min",
+      "genre": [
+        "Animation",
+        "Family",
+        "Comedy"
+      ],
+      "plot": "Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. The toys must band together to escape and return home to Andy.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg"
+    },
+    {
+      "id": 42,
+      "title": "Up",
+      "year": "2009",
+      "director": "Pete Docter",
+      "actors": [
+        "Ed Asner",
+        "Christopher Plummer",
+        "Jordan Nagai"
+      ],
+      "rating": 7.96,
+      "runtime": "96 min",
+      "genre": [
+        "Animation",
+        "Comedy",
+        "Family",
+        "Adventure"
+      ],
+      "plot": "Carl Fredricksen spent his entire life dreaming of exploring the globe and experiencing life to its fullest. But at age 78, life seems to have passed him by, until a twist of fate (and a persistent 8-year old Wilderness Explorer named Russell) gives him a new lease on life.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg"
+    },
+    {
+      "id": 43,
+      "title": "Coco",
+      "year": "2017",
+      "director": "Lee Unkrich",
+      "actors": [
+        "Anthony Gonzalez",
+        "Gael García Bernal",
+        "Benjamin Bratt"
+      ],
+      "rating": 8.198,
+      "runtime": "105 min",
+      "genre": [
+        "Family",
+        "Animation",
+        "Music",
+        "Adventure"
+      ],
+      "plot": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Interstellar",
+      "year": "2014",
+      "director": "Christopher Nolan",
+      "actors": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Michael Caine"
+      ],
+      "rating": 8.5,
+      "runtime": "169 min",
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Science Fiction"
+      ],
+      "plot": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+    },
+    {
+      "id": 45,
+      "title": "La La Land",
+      "year": "2016",
+      "director": "Damien Chazelle",
+      "actors": [
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend"
+      ],
+      "rating": 7.9,
+      "runtime": "129 min",
+      "genre": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "plot": "Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+    },
+    {
+      "id": 46,
+      "title": "The Social Network",
+      "year": "2010",
+      "director": "David Fincher",
+      "actors": [
+        "Jesse Eisenberg",
+        "Andrew Garfield",
+        "Armie Hammer"
+      ],
+      "rating": 7.37,
+      "runtime": "121 min",
+      "genre": [
+        "Drama"
+      ],
+      "plot": "In 2003, Harvard undergrad and computer programmer Mark Zuckerberg begins work on a new concept that eventually turns into the global social network known as Facebook. Six years later, Mark is one of the youngest billionaires ever, but his unprecedented success leads to both personal and legal complications when he ends up on the receiving end of two lawsuits, one involving his former friend.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg"
+    },
+    {
+      "id": 47,
+      "title": "GoodFellas",
+      "year": "1990",
+      "director": "Martin Scorsese",
+      "actors": [
+        "Robert De Niro",
+        "Ray Liotta",
+        "Joe Pesci"
+      ],
+      "rating": 8.452,
+      "runtime": "145 min",
+      "genre": [
+        "Drama",
+        "Crime"
+      ],
+      "plot": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Se7en",
+      "year": "1995",
+      "director": "David Fincher",
+      "actors": [
+        "Morgan Freeman",
+        "Brad Pitt",
+        "Gwyneth Paltrow"
+      ],
+      "rating": 8.379,
+      "runtime": "127 min",
+      "genre": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "plot": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \"seven deadly sins\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Somerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg"
+    },
+    {
+      "id": 49,
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "director": "Jonathan Demme",
+      "actors": [
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Scott Glenn"
+      ],
+      "rating": 8.345,
+      "runtime": "119 min",
+      "genre": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "plot": "Clarice Starling is a top student at the FBI's training academy.  Jack Crawford wants Clarice to interview Dr. Hannibal Lecter, a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.  Crawford believes that Lecter may have insight into a case and that Starling, as an attractive young woman, may be just the bait to draw him out.",
+      "thumbnail": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+.admin-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.admin-nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.admin-nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown > a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #1f1f1f;
+  min-width: 200px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #333;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  /*   position: absolute;
+  top: 10px;
+  right: 0px; */
+  font-size: 1.1rem;
+}
+
+.right-menu a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.right-menu a:hover {
+  text-decoration: underline;
+}
+
+.admin-main {
+  padding: 1rem 2rem;
+}
+
+.admin-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.admin-main table th,
+.admin-main table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+form .form-group {
+  margin-bottom: 0.75rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="datetime-local"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.35rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Ticket list styling */
+.ticket-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 6px;
+}
+.ticket-item a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal styling */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.message-box {
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Login container styling */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #444343;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Error and success messages */
+.msg-error,
+.msg-success {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.msg-error {
+  background-color: #ffe5e5;
+  color: #d8000c;
+  border: 1px solid #d8000c;
+}
+
+.msg-success {
+  background-color: #e6ffed;
+  color: #2d7a2d;
+  border: 1px solid #2d7a2d;
+}
+
+/* Form styling */
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Buttons styling */
+.login-btn-main,
+.login-btn-secondary {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.login-btn-main {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.login-btn-main:hover {
+  background-color: #0056b3;
+}
+
+.login-btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.login-btn-secondary:hover {
+  background-color: #ddd;
+}
+
+/* Separator */
+.login-form hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.logout-wrapper {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-left: clamp(40px, 20dvw, 5000px);
+  padding-right: clamp(40px, 20dvw, 5000px);
+  min-height: 80dvh;
+}
+
+.logout-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.logout-illustration {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e6edff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  color: #2656e0;
+}
+
+.logout-title {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.logout-sub {
+  font-size: 1rem;
+  color: #666;
+  max-width: 520px;
+  margin: 0 auto 20px auto;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.lgo-btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 130px;
+  text-align: center;
+}
+
+/* Primary button */
+.btn-primary {
+  background: #2656e0;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1d44b6;
+}
+
+/* Outline button */
+.btn-outline {
+  border: 1px solid #2656e0;
+  color: #2656e0;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #dce6ff;
+}
+
+.logout-footer {
+  font-size: 0.9rem;
+  color: #777;
+  max-width: 520px;
+  margin: 0 auto;
+}
