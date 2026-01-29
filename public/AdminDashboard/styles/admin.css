@@ -4,7 +4,7 @@
 
 body {
   font-family: var(--font-base);
-  background: var(--bg-dark-soft);
+  background: var(--bg-dark-admin)  !important;
   color: var(--text-main);
 }
 
@@ -20,6 +20,13 @@ body {
   color: var(--text-light);
   padding: var(--md) var(--lg);
   box-shadow: var(--shadow-md);
+}
+
+.admin-card .admin-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--lg);
 }
 
 .admin-nav {
@@ -189,11 +196,11 @@ button {
   min-width: 120px;
   padding: 6px 12px;
   margin-top: 5px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: none;
   background: var(--primary);
   color: var(--text-light);
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: background var(--transition), transform var(--transition);
 }

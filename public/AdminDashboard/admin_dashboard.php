@@ -96,7 +96,7 @@ switch ($page) {
     default:
         ?>
         <section class="admin-card">
-            <h2>Welcome to the Admin Dashboard</h2>
+            <div class="admin-card-header"><h2>Welcome to the Admin Dashboard</h2></div>
 
             <label for="admin-action" class="admin-label">
                 Library data import.
