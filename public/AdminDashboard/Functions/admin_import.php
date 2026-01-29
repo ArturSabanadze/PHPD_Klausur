@@ -16,14 +16,23 @@ if (empty($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 $type = $_POST['type'] ?? '';
 
 switch ($type) {
-    case 'books':
+    case 'books_json':
         importBooksFromJson();
-        echo 'Books imported successfully.';
+        echo 'Books imported successfully from JSON.';
         break;
 
-    case 'movies':
+    case 'movies_json':
         importMoviesFromJson();
-        echo 'Movies imported successfully.';
+        echo 'Movies imported successfully from JSON.';
+        break;
+
+    case 'books_xml':
+        importBooksFromXml();
+        echo 'Books imported successfully from XML.';
+        break;
+    case 'movies_xml':
+        importMoviesFromXml();
+        echo 'Movies imported successfully from XML.';
         break;
 
     default:

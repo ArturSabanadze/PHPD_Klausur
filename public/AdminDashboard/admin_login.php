@@ -14,7 +14,7 @@ $success_message = $_SESSION['login_success'] ?? '';
 unset($_SESSION['login_error'], $_SESSION['login_success']);
 $success = !empty($success_message);
 
-require_once __DIR__ . '/../../../Backend/api/authentication_api.php';
+require_once __DIR__ . '/../../Backend/api/authentication_api.php';
 
 ?>
 

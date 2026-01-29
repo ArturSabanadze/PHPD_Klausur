@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../../Backend/api/products_api.php'; // Provides $movies as associative array
 
 if (empty($movies)) {
-    echo "<p>No movies found.</p>";
+    echo "<p>No movies found. <a href=\"admin_dashboard.php\">import library</a></p>";
 } else {
     ?>
     <section class="movies-list">
@@ -40,7 +40,7 @@ if (empty($movies)) {
                         <td><?= htmlspecialchars($movie['rating'] ?? '') ?></td>
                         <td><?= htmlspecialchars($movie['runtime'] ?? '') ?></td>
                         <td><?= htmlspecialchars($movie['genre'] ?? '') ?></td>
-                        <td><?= htmlspecialchars($movie['plot'] ?? '') ?></td>
+                        <td><div class="td-clamp"><?= htmlspecialchars($movie['plot'] ?? '') ?></div></td>
                         
                     </tr>
                 <?php endforeach; ?>

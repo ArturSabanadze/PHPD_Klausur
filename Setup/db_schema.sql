@@ -105,6 +105,11 @@ INSERT INTO users (username, password_hash, email, status) VALUES
 ('john_doe', '$2y$12$E6xVt0Pb6FiK99JK9A67DeLZ5cK8vdm/tsjtkW0BoDr.0kSfEU.uK', 'john_doe@example.com', 'active'),
 ('jane_smith', '$2y$12$E6xVt0Pb6FiK99JK9A67DeLZ5cK8vdm/tsjtkW0BoDr.0kSfEU.uK', 'jane_smith@example.com', 'active');
 
+INSERT INTO contact_messages (user_id, subject, message, status) VALUES
+(2, 'Issue with book data', 'I found some incorrect information in the book database.', 'new'),
+(3, 'Feature Request', 'Can you add more categories for movies?', 'in_progress'),
+(1, 'General Inquiry', 'How often is the movie database updated?', 'resolved');
+
 
 /* Only after importing movies data  into Database*/
 /* INSERT INTO movies_comments (product_type, product_id, user_id, comment, reported,  hidden, rating) VALUES

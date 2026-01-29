@@ -82,3 +82,67 @@ function loadMoviesFromJson(): array
     return $movies;
 }
 
+function loadBooksFromXml(): array
+{
+    $filePath = __DIR__ . '/../data/books_programming.xml';
+    if (!file_exists($filePath)) {
+        return [];
+    }
+
+    $xml = simplexml_load_file($filePath, 'SimpleXMLElement', LIBXML_NOCDATA);
+    if (!$xml || !isset($xml->book)) {
+        return [];
+    }
+
+    $books = [];
+
+    foreach ($xml->book as $item) {
+        $books[] = [
+            'id'        => (string)($item->id ?? null),
+            'title'     => (string)($item->title ?? 'Untitled'),
+            'author'    => isset($item->authors) ? implode(', ', array_map('strval', (array)$item->authors->author)) : 'Unknown',
+            'category'  => (string)($item->category ?? 'Uncategorized'),
+            'thumbnail' => (string)($item->thumbnail ?? 'images/default-thumbnail.jpg'),
+            'price'     => isset($item->price) ? floatval($item->price) : null,
+            'currency'  => (string)($item->currency ?? null),
+            'rating'    => isset($item->rating) ? floatval($item->rating) : null,
+            'pageCount' => isset($item->pageCount) ? intval($item->pageCount) : null,
+            'published' => (string)($item->published ?? null),
+            'preview'   => (string)($item->preview ?? null),
+        ];
+    }
+
+    return $books;
+}
+
+function loadMoviesFromXml(): array
+{
+    $filePath = __DIR__ . '/../data/movies_library.xml';
+    if (!file_exists($filePath)) {
+        return [];
+    }
+
+    $xml = simplexml_load_file($filePath, 'SimpleXMLElement', LIBXML_NOCDATA);
+    if (!$xml || !isset($xml->movie)) {
+        return [];
+    }
+
+    $movies = [];
+
+    foreach ($xml->movie as $movie) {
+        $movies[] = [
+            'id'        => (string)($movie->id ?? null),
+            'title'     => (string)($movie->title ?? 'Untitled'),
+            'year'      => (string)($movie->year ?? null),
+            'director'  => (string)($movie->director ?? 'Unknown'),
+            'actors'    => isset($movie->actors) ? implode(', ', array_map('strval', (array)$movie->actors->actor)) : 'Unknown',
+            'genre'     => isset($movie->genre) ? implode(', ', array_map('strval', (array)$movie->genre->item)) : 'Uncategorized',
+            'runtime'   => (string)($movie->runtime ?? null),
+            'rating'    => isset($movie->rating) ? floatval($movie->rating) : null,
+            'plot'      => (string)($movie->plot ?? null),
+            'thumbnail' => (string)($movie->thumbnail ?? 'images/default-thumbnail.jpg'),
+        ];
+    }
+
+    return $movies;
+}

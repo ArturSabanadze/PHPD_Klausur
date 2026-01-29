@@ -1,111 +1,160 @@
+/* =========================
+   ADMIN BASE
+========================= */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f5f5f5;
+  font-family: var(--font-base);
+  background: var(--bg-dark-soft);
+  color: var(--text-main);
 }
+
+/* =========================
+   ADMIN HEADER / NAV
+========================= */
 
 .admin-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  padding: var(--md) var(--lg);
+  box-shadow: var(--shadow-md);
+}
+
+.admin-nav {
+  display: flex;
+  gap: var(--md);
 }
 
 .admin-nav a {
-  color: #fff;
-  margin-right: 1rem;
-  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
 }
 
 .admin-nav a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
+
+/* Dropdown */
 
 .nav-dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .nav-dropdown > a {
-  padding: 10px 15px;
-  display: block;
-  text-decoration: none;
-  color: white;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  background: #1f1f1f;
+  top: 100%;
+  left: 0;
+  background: var(--bg-dark-soft);
   min-width: 200px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .dropdown-menu a {
+  padding: 10px 14px;
   display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.9rem;
 }
 
 .dropdown-menu a:hover {
-  background: #333;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Right menu */
+
 .right-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: start;
-  /*   position: absolute;
-  top: 10px;
-  right: 0px; */
-  font-size: 1.1rem;
+  gap: var(--xs);
+  font-size: 0.95rem;
 }
 
 .right-menu a {
-  color: #fff;
-  margin-left: 1rem;
-  text-decoration: none;
+  color: var(--text-light);
 }
 
 .right-menu a:hover {
-  text-decoration: underline;
+  color: var(--accent);
 }
 
+/* =========================
+   ADMIN MAIN
+========================= */
+
 .admin-main {
-  padding: 1rem 2rem;
+  padding: var(--lg);
 }
+
+/* =========================
+   TABLES
+========================= */
 
 .admin-main table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
-  background-color: #fff;
+  margin-top: var(--md);
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
-.admin-main table th,
-.admin-main table td {
-  border: 1px solid #ddd;
-  padding: 0.5rem;
+.admin-main th,
+.admin-main td {
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 10px;
+  font-size: 0.85rem;
   text-align: left;
+  max-width: 800px;
+  
 }
 
-form .form-group {
-  margin-bottom: 0.75rem;
+/* clamp ONLY the inner content */
+.admin-main .td-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+
+.admin-main th {
+  background: var(--bg-dark-soft);
+  font-weight: 600;
+  color: aliceblue;
+}
+
+/* =========================
+   FORMS (ADMIN)
+========================= */
+
+.form-group {
+  margin-bottom: var(--sm);
 }
 
 form label {
   display: block;
-  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  margin-bottom: var(--xs);
+  font-weight: 500;
 }
 
 form input[type="text"],
@@ -114,165 +163,154 @@ form input[type="datetime-local"],
 form textarea,
 form select {
   width: 100%;
-  padding: 0.35rem;
-  box-sizing: border-box;
+  padding: 6px 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  font-size: 0.9rem;
 }
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* =========================
+   BUTTONS
+========================= */
 
 button {
-  padding: 0.5rem 1rem;
+  min-width: 120px;
+  padding: 6px 12px;
+  margin-top: 5px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: var(--primary);
+  color: var(--text-light);
+  font-weight: 600;
   cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
 }
 
-/* Ticket list styling */
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   TICKET LIST
+========================= */
+
 .ticket-item {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 6px;
-}
-.ticket-item a {
-  color: #007bff;
-  text-decoration: none;
-  cursor: pointer;
+  padding: var(--sm);
+  border-bottom: 1px solid var(--border-color);
 }
 
-/* Modal styling */
+.ticket-item a {
+  font-weight: 500;
+}
+
+/* =========================
+   MODAL
+========================= */
+
 .modal-overlay {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2000;
 }
 
 .modal {
-  background: white;
-  padding: 20px;
+  background: var(--bg-surface);
+  padding: var(--lg);
   width: 500px;
   max-width: 90%;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
 }
 
 .modal-close {
   float: right;
-  cursor: pointer;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.modal-close:hover {
+  color: var(--primary);
 }
 
 .message-box {
-  padding: 10px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
+  padding: var(--sm);
+  background: var(--bg-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--sm);
 }
 
-/* Login container styling */
+/* =========================
+   LOGIN (ADMIN)
+========================= */
+
 .login-container {
   max-width: 400px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #444343;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  padding: var(--lg);
+  background: var(--bg-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
-/* Error and success messages */
-.msg-error,
+.login-form label {
+  color: var(--text-light);
+}
+
+.login-form input {
+  margin-bottom: var(--sm);
+}
+
+/* =========================
+   MESSAGES
+========================= */
+
 .msg-success {
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  font-weight: bold;
+  color: var(--text-msg-ok);
+  font-weight: 600;
+  margin-bottom: var(--sm);
 }
 
 .msg-error {
-  background-color: #ffe5e5;
-  color: #d8000c;
-  border: 1px solid #d8000c;
+  color: var(--text-msg-error);
+  font-weight: 600;
+  margin-bottom: var(--sm);
 }
 
-.msg-success {
-  background-color: #e6ffed;
-  color: #2d7a2d;
-  border: 1px solid #2d7a2d;
-}
-
-/* Form styling */
-.login-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 500;
-  color: white;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 1rem;
-}
-
-/* Buttons styling */
-.login-btn-main,
-.login-btn-secondary {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: background 0.3s, color 0.3s;
-}
-
-.login-btn-main {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.login-btn-main:hover {
-  background-color: #0056b3;
-}
-
-.login-btn-secondary {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.login-btn-secondary:hover {
-  background-color: #ddd;
-}
-
-/* Separator */
-.login-form hr {
-  margin: 15px 0;
-  border: none;
-  border-top: 1px solid #ccc;
-}
+/* =========================
+   LOGOUT
+========================= */
 
 .logout-wrapper {
-  padding-bottom: 80px;
-  padding-top: 80px;
-  padding-left: clamp(40px, 20dvw, 5000px);
-  padding-right: clamp(40px, 20dvw, 5000px);
-  min-height: 80dvh;
+  padding: var(--xl) clamp(40px, 20vw, 600px);
+  min-height: 80vh;
 }
 
 .logout-card {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  background: var(--bg-surface);
+  padding: var(--lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
   text-align: center;
 }
 
@@ -280,67 +318,32 @@ button {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #e6edff;
+  background: rgba(63, 81, 181, 0.1);
+  color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 20px auto;
-  color: #2656e0;
+  margin: 0 auto var(--md);
 }
 
 .logout-title {
-  font-size: 1.8rem;
-  margin: 10px 0;
+  font-size: 1.6rem;
+  margin-bottom: var(--xs);
 }
 
 .logout-sub {
-  font-size: 1rem;
-  color: #666;
-  max-width: 520px;
-  margin: 0 auto 20px auto;
+  color: var(--text-muted);
+  margin-bottom: var(--md);
 }
 
 .logout-actions {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.lgo-btn {
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  min-width: 130px;
-  text-align: center;
-}
-
-/* Primary button */
-.btn-primary {
-  background: #2656e0;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #1d44b6;
-}
-
-/* Outline button */
-.btn-outline {
-  border: 1px solid #2656e0;
-  color: #2656e0;
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background: #dce6ff;
+  gap: var(--sm);
+  margin-bottom: var(--md);
 }
 
 .logout-footer {
-  font-size: 0.9rem;
-  color: #777;
-  max-width: 520px;
-  margin: 0 auto;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }

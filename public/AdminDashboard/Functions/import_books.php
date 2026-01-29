@@ -3,19 +3,17 @@ require_once __DIR__ . '/../../../Backend/DB_Connection/db_connection.php';
 require_once __DIR__ . '/../../../Backend/Classes/Product/Product.php';
 
 
-// Import books from a JSON file (Google Books API format) into the database
 function importBooksFromJson(): void
 {
     global $pdo;
-    
-    // Google Books API
+
     $file = "../../data/books_programming.json";
+
+    if (!file_exists($file)) return;
 
     $response = json_decode(file_get_contents($file), true);
 
-    if (!isset($response['items']) || !is_array($response['items'])) {
-        return; // No books returned
-    }
+    if (!isset($response['items']) || !is_array($response['items'])) return;
 
     $bookModel = new Product();
 
@@ -24,7 +22,7 @@ function importBooksFromJson(): void
         'publisher', 'published_date', 'language', 'page_count', 'category',
         'price', 'currency', 'saleability'
     ];
-    
+
     foreach ($response['items'] as $item) {
         $info = $item['volumeInfo'] ?? [];
         $sale = $item['saleInfo'] ?? [];
@@ -36,7 +34,7 @@ function importBooksFromJson(): void
             'author'         => $info['authors'][0] ?? null,
             'description'    => $info['description'] ?? null,
             'thumbnail'      => $info['imageLinks']['thumbnail'] ?? null,
-            'preview_link'    => $info['previewLink'] ?? null,
+            'preview_link'   => $info['previewLink'] ?? null,
             'publisher'      => $info['publisher'] ?? null,
             'published_date' => $info['publishedDate'] ?? null,
             'language'       => $info['language'] ?? null,
@@ -45,6 +43,50 @@ function importBooksFromJson(): void
             'price'          => $sale['retailPrice']['amount'] ?? null,
             'currency'       => $sale['retailPrice']['currencyCode'] ?? null,
             'saleability'    => $sale['saleability'] ?? null
+        ];
+
+        $bookModel->create($pdo, "books", $columns, $keyValues);
+    }
+}
+
+function importBooksFromXml(): void
+{
+    global $pdo;
+
+    $file = "../../data/books_programming.xml";
+
+    if (!file_exists($file)) return;
+
+    $xml = simplexml_load_file($file, 'SimpleXMLElement', LIBXML_NOCDATA);
+    if (!$xml || !isset($xml->book)) return;
+
+    $bookModel = new Product();
+
+    $columns = [
+        'google_id', 'title', 'subtitle', 'author', 'description', 'thumbnail', 'preview_link',
+        'publisher', 'published_date', 'language', 'page_count', 'category',
+        'price', 'currency', 'saleability'
+    ];
+
+    foreach ($xml->book as $item) {
+        $authors = isset($item->authors) ? array_map('strval', (array)$item->authors->author) : [];
+
+        $keyValues = [
+            'google_id'      => (string)($item->id ?? null),
+            'title'          => (string)($item->title ?? 'Untitled'),
+            'subtitle'       => (string)($item->subtitle ?? null),
+            'author'         => $authors[0] ?? null,
+            'description'    => (string)($item->description ?? null),
+            'thumbnail'      => (string)($item->thumbnail ?? null),
+            'preview_link'   => (string)($item->preview ?? null),
+            'publisher'      => (string)($item->publisher ?? null),
+            'published_date' => (string)($item->published ?? null),
+            'language'       => (string)($item->language ?? null),
+            'page_count'     => isset($item->pageCount) ? intval($item->pageCount) : null,
+            'category'       => (string)($item->category ?? null),
+            'price'          => isset($item->price) ? floatval($item->price) : null,
+            'currency'       => (string)($item->currency ?? null),
+            'saleability'    => (string)($item->saleability ?? null)
         ];
 
         $bookModel->create($pdo, "books", $columns, $keyValues);

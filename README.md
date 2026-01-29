@@ -13,3 +13,7 @@ A full-stack web application for managing and browsing books, films and music bu
 - AJAX-powered search with auto-suggest
 - Admin dashboard for content management
 - Import/export media data (JSON, XML, CSV)
+
+## Insstaltion
+- Run setup.bat file it will initialize the Database and create the website directory in xampp httdocs folder
+- open your browser and visit 

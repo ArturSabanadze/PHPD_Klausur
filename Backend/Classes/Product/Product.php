@@ -23,7 +23,7 @@ class Product
      * @param string $product_table Table name (e.g., 'books', 'movies')
      * @return array List of product titles
      */
-    public static function getAllProductTitlesByType(PDO $pdo, string $product_table): array
+    public function getAllProductTitlesByType(PDO $pdo, string $product_table): array
     {
         $stmt = $pdo->prepare("SELECT title FROM $product_table");
         $stmt->execute();
@@ -178,6 +178,15 @@ class Product
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function unflagComment(PDO $pdo, string $product_table_name, int $commentId): bool
+    {
+        $stmt = $pdo->prepare("
+            UPDATE " . $product_table_name . "_comments
+            SET reported = 0
+            WHERE id = ?
+        ");
+        return $stmt->execute([$commentId]);
+    }
     public function hideComment(PDO $pdo, string $product_table_name, int $commentId): bool
     {
         $stmt = $pdo->prepare("

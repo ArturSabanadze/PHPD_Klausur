@@ -46,6 +46,14 @@ if (empty($flaggedComments)) {
                             >
                                 Hide Comment
                             </button>
+                            <button 
+                                class="btn-unflag"
+                                data-type="<?= htmlspecialchars($comment['type']) ?>"
+                                data-id="<?= htmlspecialchars($comment['comment_id']) ?>"
+                                onclick="unflagComment(this)"
+                            >
+                                Unflag
+                            </button>
 
                             <button 
                                 class="btn-ban"
@@ -80,6 +88,25 @@ if (empty($flaggedComments)) {
             .catch(() => alert('Failed to hide comment'));
         }
 
+        function unflagComment(button) {
+            const type = button.dataset.type;
+            const id = button.dataset.id;
+
+            if (!confirm('Unflag this comment?')) return;
+
+            fetch('/AdminDashboard/Functions/admin_actions.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `action=unflag_comment&type=${type}&id=${id}`
+            })
+            .then(res => res.text())
+            .then(msg => {
+                alert(msg);
+                button.closest('tr').remove();
+            })
+            .catch(() => alert('Failed to unflag comment'));
+        }
+
         function banUser(button) {
             const username = button.dataset.user;
 
@@ -91,7 +118,7 @@ if (empty($flaggedComments)) {
                 body: `action=ban_user&username=${encodeURIComponent(username)}`
             })
             .then(res => res.text())
-            .then(alert)
+            .then(msg => { alert(msg); })
             .catch(() => alert('Failed to ban user'));
         }
 </script>

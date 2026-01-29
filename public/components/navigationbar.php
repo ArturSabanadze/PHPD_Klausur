@@ -4,7 +4,7 @@ $library = $_GET['library'] ?? 'books'; // default
 ?>
 
 <!-- product titles fetcher -->
-<script src="/functions/get_product_titles.js"></script>
+<script src="functions/get_product_titles.js"></script>
 
 <div class="navbarContainerWrapper">
     <navbar class="main-navbar">

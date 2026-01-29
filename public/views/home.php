@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../functions/json_filter.php';
-require_once __DIR__ . '/../functions/read_json.php';
+require_once __DIR__ . '/../functions/data_parser.php';
 require_once __DIR__ . '/../functions/pagination.php';
 
 $availableLibraries = ['No library', 'books', 'movies', 'music'];

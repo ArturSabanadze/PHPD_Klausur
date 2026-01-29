@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../../Backend/api/products_api.php'; // Provides $books as associative array
 
 if (empty($books)) {
-    echo "<p>No books found.</p>";
+    echo "<p>No books found. <a href=\"admin_dashboard.php\">import library</a></p>";
 } else {
     ?>
     <section class="books-list">
@@ -31,7 +31,9 @@ if (empty($books)) {
                         <td><?= htmlspecialchars($book['id']) ?></td>
                         <td><?= htmlspecialchars($book['title']) ?></td>
                         <td><?= htmlspecialchars($book['author'] ?? '') ?></td>
-                        <td><?= htmlspecialchars($book['description'] ?? '') ?></td>
+                        
+                        <td><div class="td-clamp"><?= htmlspecialchars($book['description'] ?? '') ?></div></td>
+                        
                         <td>
                             <?php if (!empty($book['thumbnail'])): ?>
                                 <img src="<?= htmlspecialchars($book['thumbnail']) ?>" alt="Thumbnail" style="width:90px;">

@@ -22,7 +22,7 @@ $movies = [];
 $getProductById = null;
 $currentProductComments = [];
 $productTitles = [];
-$flaggedComments = new Product()->getAllFlaggedComments($pdo);
+$flaggedComments = $productInstance->getAllFlaggedComments($pdo);
 
 if (!isset($pdo) || !$pdo instanceof PDO) {
     die("Database connection is not initialized.");
@@ -32,7 +32,7 @@ try {
     $books = $productInstance->read($pdo, 'books');
     $movies = $productInstance->read($pdo, 'movies');
    
-    $productTitles = new Product()->getAllProductTitlesByType($pdo, $library) ?? [];
+    $productTitles = $productInstance->getAllProductTitlesByType($pdo, $library) ?? [];
 
     if ($library !== null && $productId > 0) {
         $getProductById = $productInstance->getById($pdo, $library, $productId);

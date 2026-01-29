@@ -28,6 +28,20 @@ if (!isset($pdo) || !$pdo instanceof PDO) {
 }
 
 switch ($action) {
+    case 'unflag_comment':
+        $type = $_POST['type'] ?? '';
+        $id   = (int)($_POST['id'] ?? 0);
+
+        if (!$type || !$id) {
+            http_response_code(400);
+            echo 'Invalid parameters';
+            exit;
+        }
+
+        $product->unflagComment($pdo, $type, $id);
+        echo 'Comment unflagged successfully.';
+        exit();
+        
     case 'hide_comment':
         $type = $_POST['type'] ?? '';
         $id   = (int)($_POST['id'] ?? 0);

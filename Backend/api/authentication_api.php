@@ -32,6 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'login
         // Fetch the user data
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        if($user['status'] === 'banned') {
+            $_SESSION['login_error'] = 'Your account has been banned. Please contact support.';
+            header("Location: index.php?page=login");
+            exit;
+        }
         // Überprüfen, ob der Benutzer existiert und das Passwort korrekt ist und erstelle Session
         if ($user) {
             if (password_verify($password, $user['password_hash'])) {
