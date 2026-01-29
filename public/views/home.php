@@ -4,7 +4,7 @@ require_once __DIR__ . '/../functions/json_filter.php';
 require_once __DIR__ . '/../functions/data_parser.php';
 require_once __DIR__ . '/../functions/pagination.php';
 
-$availableLibraries = ['No library', 'books', 'movies', 'music'];
+$availableLibraries = ['No library', 'books', 'movies'];
 if (isset($_GET['library']) && in_array($_GET['library'], $availableLibraries, true)) {
     $_SESSION['library'] = $_GET['library'];
 }
@@ -67,18 +67,13 @@ if ($selectedLibrary === 'books' && ($search || $category || $best_rate || $pric
     $libraryData = filterBooks($search, $category, $best_rate, $price_asc, $price_desc);
 } elseif ($selectedLibrary === 'movies' && ($search || $category || $best_rate || $price_asc || $price_desc)) {
     $libraryData = filterMovies($search, $category, $best_rate, $price_asc, $price_desc);
-} elseif ($selectedLibrary === 'music' && ($search || $category || $best_rate || $price_asc || $price_desc)) {
-    $libraryData = filterMusic($search, $category, $best_rate, $price_asc, $price_desc);
 } 
 // Load all data per library (FROM JSON)
 elseif ($selectedLibrary === 'books') {
     $libraryData = loadBooksFromJson();
 } elseif ($selectedLibrary === 'movies') {
     $libraryData = loadMoviesFromJson();
-} elseif ($selectedLibrary === 'music') {
-    $libraryData = loadMusicFromJson();
 }
-
 
 $pagination = paginate($libraryData);
 ?>

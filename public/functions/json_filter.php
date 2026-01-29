@@ -141,10 +141,3 @@ function filterMovies($search = false, $category = false, $best_rate = false, $p
                // If no search criteraia provided, return all movies
                return $movies ?? [];
 }
-
-function filterMusic($search, $category, $best_rate, $price_asc, $price_desc): array
-{
-    // Placeholder function for music filtering
-    return [];
-}
-
