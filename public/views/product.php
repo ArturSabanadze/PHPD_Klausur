@@ -57,8 +57,8 @@ $library = $_GET['library'] ?? '';
             <!-- Actions -->
             <div class="product-actions">
                 <a href="<?= $library === 'movies'
-                    ? 'movies.php?library=movies'
-                    : 'books.php?library=books' ?>"
+                    ? '?library=movies'
+                    : '?library=books' ?>"
                    class="btn btn-secondary">
                     Back to <?= ucfirst($library) ?>
                 </a>
