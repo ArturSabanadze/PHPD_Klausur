@@ -4,7 +4,7 @@
 if (!isset($GLOBALS['pdo']) || !$GLOBALS['pdo'] instanceof PDO) {
 
     $host   = $env['DB_HOST'] ?? 'localhost';
-    $dbname = $env['DB_NAME'] ?? 'media_library';
+    $dbname = $env['DB_NAME'] ?? 'gruppe1_phpd';
     $user   = $env['DB_USER'] ?? 'root';
     $pass   = $env['DB_PASS'] ?? '';
 

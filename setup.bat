@@ -50,14 +50,14 @@ if not exist "%XAMPP_PATH%\mysql\bin\mysql.exe" (
 :: -------------------------------
 :: Datenbank erstellen
 :: -------------------------------
-echo Erstelle Datenbank 'media_library'...
-"%XAMPP_PATH%\mysql\bin\mysql.exe" -u root -e "CREATE DATABASE IF NOT EXISTS media_library;"
+echo Erstelle Datenbank 'gruppe1_phpd'...
+"%XAMPP_PATH%\mysql\bin\mysql.exe" -u root -e "CREATE DATABASE IF NOT EXISTS gruppe1_phpd;"
 
 :: -------------------------------
 :: Initial-SQL importieren
 :: -------------------------------
 echo Importiere Initial SQL ...
-"%XAMPP_PATH%\mysql\bin\mysql.exe" -u root media_library < "%SQL_PATH%db_schema.sql"
+"%XAMPP_PATH%\mysql\bin\mysql.exe" -u root gruppe1_phpd < "%SQL_PATH%db_schema.sql"
 
 :: -------------------------------
 :: Fertig

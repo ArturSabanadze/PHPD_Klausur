@@ -1,9 +1,8 @@
-CREATE DATABASE IF NOT EXISTS media_library
+CREATE DATABASE IF NOT EXISTS gruppe1_phpd
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE media_library;
-
+USE gruppe1_phpd;
 CREATE TABLE admins (
   id             INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   username       VARCHAR(100) NOT NULL UNIQUE,
