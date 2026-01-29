@@ -16,10 +16,6 @@ A full-stack media management application for books, films, and music built as a
 - Import/export (JSON, XML, CSV)
 
 ## Installation
-2. Please visit the following link: `http://localhost/gruppe1_phpd/public/Documentation/index.html`
+- Please open the following file to read the instruction `gruppe1_phpd/public/Documentation/index.html`
 
-## Project Structure
-- `/Backend` - PHP backend (MVC architecture)
-- `/public` - Frontend assets and views
-- `/Setup` - Database schema and setup scripts
-- `/Documentation` - Project documentation
+
