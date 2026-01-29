@@ -16,8 +16,7 @@ A full-stack media management application for books, films, and music built as a
 - Import/export (JSON, XML, CSV)
 
 ## Installation
-1. Run `setup.bat` to initialize the database and copy files to XAMPP htdocs
-2. Visit `http://localhost/gruppe1_phpd/public` in your browser
+2. Please visit the following link: `http://localhost/gruppe1_phpd/public/Documentation/index.html`
 
 ## Project Structure
 - `/Backend` - PHP backend (MVC architecture)
