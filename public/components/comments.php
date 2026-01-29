@@ -10,7 +10,7 @@ $comments = $currentProductComments ?? [];
 $productType = $_GET['product_type'] ?? '';
 $productId = $_GET['product_id'] ?? 0;
 ?>
-<script src="/functions/postComment.js"></script>
+<script src="functions/postComment.js"></script>
 
 <section class="product-comments card" style="max-height: none;">
     <h2>Comments</h2>

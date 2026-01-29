@@ -4,7 +4,7 @@ echo Media Library Setup Script
 echo ===============================
 
 :: -------------------------------
-:: Pfade setzen
+:: Pfade setzen 
 :: -------------------------------
 set XAMPP_PATH=C:\xampp
 set Htdocs_PATH=%XAMPP_PATH%\htdocs

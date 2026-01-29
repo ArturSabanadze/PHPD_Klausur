@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/ProductRepository.php';
+require_once __DIR__ . '/TraitProduct.php';
+
 /**
  * Product Class
  * 
@@ -12,23 +15,9 @@
  * @version 1.0.1
  */
 
-class Product
+class Product implements ProductRepository
 {
-    /* ---------- STATIC METHODS ---------- */
-
-    /**
-     * Retrieves all product titles from a specific product table.
-     *
-     * @param PDO $pdo PDO database connection
-     * @param string $product_table Table name (e.g., 'books', 'movies')
-     * @return array List of product titles
-     */
-    public function getAllProductTitlesByType(PDO $pdo, string $product_table): array
-    {
-        $stmt = $pdo->prepare("SELECT title FROM $product_table");
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_COLUMN);
-    }
+    use TraitProduct;
 
     /* ---------- CREATE ---------- */
 
@@ -110,6 +99,13 @@ class Product
 
         $stmt->execute($keyValues);
     }
+
+    /* ---------- DELETE ---------- */
+    public function delete(PDO $pdo, string $product_table_name, int $id): void
+    {
+        $stmt = $pdo->prepare("DELETE FROM $product_table_name WHERE id = ?");
+        $stmt->execute([$id]);
+    }   
 
     /* ---------- COMMENTS ---------- */
 

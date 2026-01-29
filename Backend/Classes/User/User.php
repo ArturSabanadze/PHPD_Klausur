@@ -23,11 +23,6 @@ class User
         $this->id = $id;
     }
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
     // Check if username or email already exists
     public function exist($db): bool
     {

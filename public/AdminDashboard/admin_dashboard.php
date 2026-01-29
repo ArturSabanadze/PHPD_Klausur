@@ -29,8 +29,9 @@ if ($page === 'login' && !empty($_SESSION['role']) && $_SESSION['role'] === 'adm
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/admin.css">
-     <link rel="stylesheet" href="../../styles/global.css">
+     
 </head>
 
 <body>

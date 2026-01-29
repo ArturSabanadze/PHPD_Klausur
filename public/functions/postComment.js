@@ -4,7 +4,7 @@ function postComment(product_type, product_id, user_id, comment, rating) {
         return;
     }
 
-    fetch('/api_middleware/node_expose.php', {
+    fetch('api_middleware/node_expose.php', {
         method: 'POST',
         credentials: 'same-origin',
         headers: {
@@ -35,7 +35,7 @@ function postComment(product_type, product_id, user_id, comment, rating) {
 }
 
 function reportComment(commentId, productType) {
-    fetch('/api_middleware/comment_report.php', {
+    fetch('api_middleware/comment_report.php', {
         method: 'POST',
         credentials: 'same-origin',
         headers: {

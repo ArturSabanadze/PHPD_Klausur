@@ -106,8 +106,8 @@
     <h2>3. Features</h2>
     <ul>
         <li>Media browsing with list and detail views</li>
-        <li>User registration and authentication</li>
-        <li>Comment and rating system for registered users</li>
+        <li>Basic User registration and authentication</li>
+        <li>Simple Comment and rating system for registered users</li>
         <li>AJAX-powered search with auto-suggest</li>
         <li>Admin dashboard for managing content</li>
         <li>Import and export of data (JSON, XML)</li>
@@ -117,11 +117,10 @@
     <ol>
         <li>Install <strong>XAMPP</strong> and start Apache & MySQL</li>
         <li>Run the file <code>setup.bat</code></li>
-        <li>The database <code>media_library</code> will be created automatically</li>
-        <li>Project files are copied into <code>htdocs</code></li>
-        <li>Open the website in your browser</li>      
+        <li>The database <code>gruppe1_phpd</code> will be created automatically</li>
+        <li>Project files are copied into <code>htdocs/gruppe1_phpd</code></li>
+        <li>Open the website in your browser</li>    
     </ol>
-
 
     <h2>5. User Access</h2>
 
@@ -145,8 +144,8 @@
 
     <h2>6. Database Structure</h2>
     <p>
-        The database is named <code>media_library</code> and contains multiple tables
-        for users, admins, media items, comments, and contact messages.
+        The database is named <code>gruppe1_phpd</code> and contains multiple tables
+        for users, admins, media items, comments, and contact messages.  
     </p>
 
     <ul>
@@ -158,8 +157,17 @@
         <li><strong>movies_comments</strong> – Comments for movies:  test data have to be imported manualy </li>
         <li><strong>contact_messages</strong> – Messages from users</li>
     </ul>
+    <img src="db_model.png" alt="Database Model" style="max-width: 900px;">
 
-    <h2>7. Project Structure</h2>
+    <h2>7. Classes</h2>
+    <ul>
+        <li><code>/Admin</code> – Admin classes</li>
+        <li><code>/User</code> – User classes</li>
+        <li><code>/Product</code> – Product classes</li>
+        <img src="class_uml.png" alt="Classes UML Diagram" style="max-width: 900px;">
+    </ul>
+
+    <h2>8. Project Structure</h2>
     <ul>
         <li><code>/Backend</code> – PHP backend (MVC structure)</li>
         <li><code>/public</code> – Frontend files and views</li>
