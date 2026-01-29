@@ -17,7 +17,13 @@ require_once __DIR__ . '/../DB_Connection/db_connection.php';
 require_once __DIR__ . '/../Classes/User/User.php';
 require_once __DIR__ . '/../Classes/Product/Product.php';
 
-$userInstance = new User();
+$user_data = [
+        'username' => trim($_POST['username'] ?? ''),
+        'plain_password' => $_POST['password'] ?? '',
+        'email' => trim($_POST['email'] ?? '')
+    ];
+
+$userInstance = new User($user_data);
 $product = new Product();
 $action = $_POST['action'] ?? '';
 

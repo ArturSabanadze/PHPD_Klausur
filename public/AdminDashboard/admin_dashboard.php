@@ -108,10 +108,10 @@ switch ($page) {
 
             <select id="admin-action" class="admin-select" onchange="triggerImport(this.value)">
                 <option value="">-- Please choose --</option>
-                <option value="books_json">Books from JSON</option>
-                <option value="movies_json">Movies from JSON</option>
-                <option value="books_xml">Books from XML</option>
-                <option value="movies_xml">Movies from XML</option>
+                <option value="books_json">Load Books from JSON</option>
+                <option value="movies_json">Load Movies from JSON</option>
+                <option value="books_xml">Load Books from XML</option>
+                <option value="movies_xml">Load Movies from XML</option>
             </select>
 
             <p id="import-status" class="admin-status"></p>

@@ -11,6 +11,13 @@ class User
     private string $email;
     private string $password_hash;
 
+    public function __construct(array $data = [])
+    {
+        $this->username = $data['username'];
+        $this->email = $data['email'];
+        $this->password_hash = password_hash($data['plain_password'], PASSWORD_BCRYPT);
+    }
+
 
     // Optional getter
     public function __get($key)

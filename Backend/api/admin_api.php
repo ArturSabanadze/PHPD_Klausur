@@ -11,7 +11,12 @@ if ($_SESSION['role'] !== 'admin') {
 require_once __DIR__ . '/../DB_Connection/db_connection.php';
 require_once __DIR__ . '/../Classes/User/User.php';
 
-$userInstance = new User();
+$user_data = [
+        'username' => trim($_POST['username'] ?? ''),
+        'plain_password' => $_POST['password'] ?? '',
+        'email' => trim($_POST['email'] ?? '')
+    ];
+$userInstance = new User($user_data);
 
 $allUsers = [];
 

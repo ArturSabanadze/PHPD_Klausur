@@ -4,7 +4,7 @@
 require_once __DIR__ . '/../../Backend/api/products_api.php'; // Provides $flaggedComments as associative array
 
 if (empty($flaggedComments)) {
-    echo "<p>No flagged comments found. Import some test comments from the db_schema.sql file.</p>";
+    echo "<p>No flagged comments found. Import some test comments from the Documentation/db_schema.sql file:  <strong>lines 114 - 130</strong>. Or create your own comments using the application.</p>";
 } else {
     ?>
     <section class="users-list">
@@ -75,7 +75,7 @@ if (empty($flaggedComments)) {
 
             if (!confirm('Hide this comment?')) return;
 
-            fetch('/AdminDashboard/Functions/admin_actions.php', {
+            fetch('Functions/admin_actions.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `action=hide_comment&type=${type}&id=${id}`
@@ -94,7 +94,7 @@ if (empty($flaggedComments)) {
 
             if (!confirm('Unflag this comment?')) return;
 
-            fetch('/AdminDashboard/Functions/admin_actions.php', {
+            fetch('Functions/admin_actions.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `action=unflag_comment&type=${type}&id=${id}`
@@ -112,7 +112,7 @@ if (empty($flaggedComments)) {
 
             if (!confirm(`Ban user ${username}?`)) return;
 
-            fetch('/AdminDashboard/Functions/admin_actions.php', {
+            fetch('Functions/admin_actions.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `action=ban_user&username=${encodeURIComponent(username)}`
