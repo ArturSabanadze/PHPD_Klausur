@@ -11,7 +11,7 @@ $library = $_GET['library'] ?? '';
 ?>
 
 <section class="product-single">
-    <div class="card product-card product-single-card">
+    <div class="card product-card product-single-card"> 
 
         <!-- Thumbnail -->
         <div class="product-image">

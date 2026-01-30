@@ -67,12 +67,24 @@ class Product implements ProductRepository
      * @param int $id Product ID
      * @return array|false Product data or false if not found
      */
-    public function getById(PDO $pdo, string $product_table_name, int $id): array|false
+    public function getById(PDO $pdo, string $product_table_name, int|string $id): array|false
     {
-        $stmt = $pdo->prepare("SELECT * FROM $product_table_name WHERE id = ?");
+        // First try by id
+        $stmt = $pdo->prepare("SELECT * FROM {$product_table_name} WHERE id = ?");
         $stmt->execute([$id]);
-        return $stmt->fetch();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+        if ($result !== false) {
+            return $result;
+        }
+    
+        // If not found, try by google_id
+        $stmt = $pdo->prepare("SELECT * FROM {$product_table_name} WHERE google_id = ?");
+        $stmt->execute([$id]);
+    
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
 
     /* ---------- UPDATE ---------- */
 

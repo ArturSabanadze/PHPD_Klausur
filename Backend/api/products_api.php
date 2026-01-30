@@ -9,6 +9,7 @@ require_once __DIR__ . '/../Classes/Product/Product.php';
 $productInstance = new Product();
 $library = $_GET['library'] ?? 'books';
 $productId = isset($_GET['product_id']) ? (int)$_GET['product_id'] : 0;
+$booksID = ($_GET['product_id'] ?? null);
 
 $product_comments = null;
 if ($library === 'books') {
@@ -34,8 +35,8 @@ try {
    
     $productTitles = $productInstance->getAllProductTitlesByType($pdo, $library) ?? [];
 
-    if ($library !== null && $productId > 0) {
-        $getProductById = $productInstance->getById($pdo, $library, $productId);
+    if ($library !== null && $productId !== null) {
+        $getProductById = $productInstance->getById($pdo, $library, $booksID);
         if ($product_comments) {
             $currentProductComments = $productInstance->getComments($pdo, $product_comments, $productId);
         }
