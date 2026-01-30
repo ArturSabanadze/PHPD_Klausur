@@ -4,7 +4,9 @@
 require_once __DIR__ . '/../../Backend/api/products_api.php'; // Provides $flaggedComments as associative array
 
 if (empty($flaggedComments)) {
-    echo "<p>No flagged comments found. Import some test comments from the Documentation/db_schema.sql file:  <strong>lines 114 - 130</strong>. Or create your own comments using the application.</p>";
+    echo "<p>No flagged comments found. Import some test comments from the Documentation/db_schema.sql file:  
+    <strong>lines 114 - 130</strong>. Or create your own comments 
+    using the comments management <a href=\"http://localhost/gruppe1_phpd/public/index.php\">application</a>.</p>";
 } else {
     ?>
     <section class="users-list">

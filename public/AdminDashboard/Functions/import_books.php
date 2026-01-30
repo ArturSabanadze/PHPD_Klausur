@@ -47,6 +47,7 @@ function importBooksFromJson(): void
 
         $bookModel->create($pdo, "books", $columns, $keyValues);
     }
+    
 }
 
 function importBooksFromXml(): void

@@ -112,9 +112,9 @@ switch ($page) {
                 <option value="movies_json">Load Movies from JSON</option>
                 <option value="books_xml">Load Books from XML</option>
                 <option value="movies_xml">Load Movies from XML</option>
-            </select>
+            </select> 
 
-            <p id="import-status" class="admin-status"></p>
+            <p id="import-status" class="admin-status" style="color: green; font-weight: bold;"></p>
         </section>
         <?php
         break;

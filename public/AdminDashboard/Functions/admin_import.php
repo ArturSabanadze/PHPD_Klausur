@@ -19,7 +19,7 @@ switch ($type) {
     case 'books_json':
         importBooksFromJson();
         echo 'Books imported successfully from JSON.';
-        break;
+    break;
 
     case 'movies_json':
         importMoviesFromJson();
