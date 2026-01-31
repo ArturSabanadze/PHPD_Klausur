@@ -2,7 +2,7 @@ import requests
 import json
 
 # Replace with your Bearer token from TMDB
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MDc4YTg5ZWQ1ZDlmZjdkYzNiOWM1MzM3NzI4NWNhNSIsIm5iZiI6MTc2OTUxMzU0NS4wMjU5OTk4LCJzdWIiOiI2OTc4YTI0OWVmNmU5NTYyNTRhMzdhZDMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.YecR9TIvyikiJD5tllZDIb36InBnl1pFaoINytEm77o"
+API_TOKEN = ""
 HEADERS = {
     "Authorization": f"Bearer {API_TOKEN}"
 }
